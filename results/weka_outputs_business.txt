@@ -1,0 +1,220 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L1-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1-2,4-9,11-13,16-20,22
+Instances:    4676
+Attributes:   7
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              arrival_time
+              destination_city=Delhi
+              days_left
+              price
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+price =
+
+      0.0744 * airline=Vistara +
+      0.033  * source_city=Kolkata +
+      0.4791 * stops +
+      0.028  * arrival_time +
+     -0.0216 * destination_city=Delhi +
+     -0.0351 * days_left +
+      0.1243
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.6726
+Mean absolute error                      0.0726
+Root mean squared error                  0.0949
+Relative absolute error                 75.0642 %
+Root relative squared error             73.9946 %
+Total Number of Instances             4676     
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L1-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1-2,4-9,11-13,16-20,22
+Instances:    4676
+Attributes:   7
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              arrival_time
+              destination_city=Delhi
+              days_left
+              price
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+price =
+
+      0.0744 * airline=Vistara +
+      0.033  * source_city=Kolkata +
+      0.4791 * stops +
+      0.028  * arrival_time +
+     -0.0216 * destination_city=Delhi +
+     -0.0351 * days_left +
+      0.1243
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.697 
+Mean absolute error                      0.0708
+Root mean squared error                  0.0914
+Relative absolute error                 72.8017 %
+Root relative squared error             71.7288 %
+Total Number of Instances              935     
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -T 0.001 -V -P 1.0E-12 -L 0.001 -W 1" -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007"
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L1-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1-2,4-9,11-13,16-20,22
+Instances:    4676
+Attributes:   7
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              arrival_time
+              destination_city=Delhi
+              days_left
+              price
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMOreg
+
+weights (not support vectors):
+ +       0.0667 * (normalized) airline=Vistara
+ +       0.0154 * (normalized) source_city=Kolkata
+ +       0.4968 * (normalized) stops
+ +       0.0273 * (normalized) arrival_time
+ -       0.025  * (normalized) destination_city=Delhi
+ -       0.021  * (normalized) days_left
+ +       0.1161
+
+
+
+Number of kernel evaluations: 102206055 (42.066% cached)
+
+Time taken to build model: 17.85 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.6695
+Mean absolute error                      0.0724
+Root mean squared error                  0.0952
+Relative absolute error                 74.8329 %
+Root relative squared error             74.284  %
+Total Number of Instances             4676     
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -T 0.001 -V -P 1.0E-12 -L 0.001 -W 1" -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007"
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L1-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1-2,4-9,11-13,16-20,22
+Instances:    4676
+Attributes:   7
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              arrival_time
+              destination_city=Delhi
+              days_left
+              price
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+SMOreg
+
+weights (not support vectors):
+ +       0.0667 * (normalized) airline=Vistara
+ +       0.0154 * (normalized) source_city=Kolkata
+ +       0.4968 * (normalized) stops
+ +       0.0273 * (normalized) arrival_time
+ -       0.025  * (normalized) destination_city=Delhi
+ -       0.021  * (normalized) days_left
+ +       0.1161
+
+
+
+Number of kernel evaluations: 102206055 (42.066% cached)
+
+Time taken to build model: 11.41 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.6928
+Mean absolute error                      0.0706
+Root mean squared error                  0.0919
+Relative absolute error                 72.6721 %
+Root relative squared error             72.1134 %
+Total Number of Instances              935     
+
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L1-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1-2,4-9,11-13,16-20,22
+Instances:    4676
+Attributes:   7
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              arrival_time
+              destination_city=Delhi
+              days_left
+              price
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.72 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.6732
+Mean absolute error                      0.0731
+Root mean squared error                  0.0959
+Relative absolute error                 75.6501 %
+Root relative squared error             74.7623 %
+Total Number of Instances             4676     
+
+
+05:15:36 - trees.RandomForest

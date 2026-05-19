@@ -1,0 +1,231 @@
+Select Attributes:
+
+Economy without lo transformation:
+=== Run information ===
+
+
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L2-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C10-L2-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily
+
+Instances:    10329
+
+Attributes:   24
+
+              airline=SpiceJet
+
+              airline=AirAsia
+
+              airline=Vistara
+
+              airline=GO_FIRST
+
+              airline=Indigo
+
+              airline=Air_India
+
+              source_city=Delhi
+
+              source_city=Mumbai
+
+              source_city=Bangalore
+
+              source_city=Kolkata
+
+              source_city=Hyderabad
+
+              source_city=Chennai
+
+              departure_time
+
+              stops
+
+              arrival_time
+
+              destination_city=Mumbai
+
+              destination_city=Bangalore
+
+              destination_city=Kolkata
+
+              destination_city=Hyderabad
+
+              destination_city=Chennai
+
+              destination_city=Delhi
+
+              duration
+
+              days_left
+
+              price
+
+Evaluation mode:    evaluate on all training data
+
+
+
+
+
+
+
+=== Attribute Selection on all input data ===
+
+
+
+Search Method:
+
+Best first.
+
+Start set: no attributes
+
+Search direction: forward
+
+Stale search after 5 node expansions
+
+Total number of subsets evaluated: 139
+
+Merit of best subset found:    0.613
+
+
+
+Attribute Subset Evaluator (supervised, Class (numeric): 24 price):
+
+CFS Subset Evaluator
+
+Including locally predictive attributes
+
+
+
+Selected attributes: 2,3,10,14,23 : 5
+
+                     airline=AirAsia
+
+                     airline=Vistara
+
+                     source_city=Kolkata
+
+                     stops
+
+                     days_left
+
+Economy with log transformation:
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L2-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C10-L2-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.MathExpression-Elog(A)-R1-23-unset-class-temporarily-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily
+Instances:    10329
+Attributes:   24
+              airline=SpiceJet
+              airline=AirAsia
+              airline=Vistara
+              airline=GO_FIRST
+              airline=Indigo
+              airline=Air_India
+              source_city=Delhi
+              source_city=Mumbai
+              source_city=Bangalore
+              source_city=Kolkata
+              source_city=Hyderabad
+              source_city=Chennai
+              departure_time
+              stops
+              arrival_time
+              destination_city=Mumbai
+              destination_city=Bangalore
+              destination_city=Kolkata
+              destination_city=Hyderabad
+              destination_city=Chennai
+              destination_city=Delhi
+              duration
+              days_left
+              price
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 168
+	Merit of best subset found:    0.669
+
+Attribute Subset Evaluator (supervised, Class (numeric): 24 price):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 2,3,10,14,22,23 : 6
+                     airline=AirAsia
+                     airline=Vistara
+                     source_city=Kolkata
+                     stops
+                     duration
+                     days_left
+
+
+Business:
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L1-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily
+Instances:    4676
+Attributes:   24
+              airline=SpiceJet
+              airline=AirAsia
+              airline=Vistara
+              airline=GO_FIRST
+              airline=Indigo
+              airline=Air_India
+              source_city=Delhi
+              source_city=Mumbai
+              source_city=Bangalore
+              source_city=Kolkata
+              source_city=Hyderabad
+              source_city=Chennai
+              departure_time
+              stops
+              arrival_time
+              destination_city=Mumbai
+              destination_city=Bangalore
+              destination_city=Kolkata
+              destination_city=Hyderabad
+              destination_city=Chennai
+              destination_city=Delhi
+              duration
+              days_left
+              price
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 123
+	Merit of best subset found:    0.596
+
+Attribute Subset Evaluator (supervised, Class (numeric): 24 price):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 3,10,14,15,21,23 : 6
+                     airline=Vistara
+                     source_city=Kolkata
+                     stops
+                     arrival_time
+                     destination_city=Delhi
+                     days_left
+
+

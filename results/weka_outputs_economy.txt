@@ -1,0 +1,246 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L2-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C10-L2-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1,4-9,11-13,15-22
+Instances:    10329
+Attributes:   6
+              airline=AirAsia
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              days_left
+              price
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+price =
+
+     -0.0643 * airline=AirAsia +
+      0.0403 * airline=Vistara +
+      0.0288 * source_city=Kolkata +
+      0.1463 * stops +
+     -0.2155 * days_left +
+      0.1989
+
+Time taken to build model: 0.26 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.6835
+Mean absolute error                      0.059 
+Root mean squared error                  0.0813
+Relative absolute error                 72.4008 %
+Root relative squared error             72.9863 %
+Total Number of Instances            10329     
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L2-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C10-L2-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1,4-9,11-13,15-22
+Instances:    10329
+Attributes:   6
+              airline=AirAsia
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              days_left
+              price
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+price =
+
+     -0.0643 * airline=AirAsia +
+      0.0403 * airline=Vistara +
+      0.0288 * source_city=Kolkata +
+      0.1463 * stops +
+     -0.2155 * days_left +
+      0.1989
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.02 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.6714
+Mean absolute error                      0.0592
+Root mean squared error                  0.0849
+Relative absolute error                 72.5417 %
+Root relative squared error             74.0997 %
+Total Number of Instances             2066     
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -T 0.001 -V -P 1.0E-12 -L 0.001 -W 1" -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007"
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L2-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C10-L2-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1,4-9,11-13,15-22
+Instances:    10329
+Attributes:   6
+              airline=AirAsia
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              days_left
+              price
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0618 * (normalized) airline=AirAsia
+ +       0.0422 * (normalized) airline=Vistara
+ +       0.0258 * (normalized) source_city=Kolkata
+ +       0.1266 * (normalized) stops
+ -       0.1675 * (normalized) days_left
+ +       0.1692
+
+
+
+Number of kernel evaluations: 803098918 (24.671% cached)
+
+Time taken to build model: 292.48 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.6802
+Mean absolute error                      0.0574
+Root mean squared error                  0.0836
+Relative absolute error                 70.453  %
+Root relative squared error             75.0801 %
+Total Number of Instances            10329     
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -T 0.001 -V -P 1.0E-12 -L 0.001 -W 1" -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007"
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L2-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C10-L2-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1,4-9,11-13,15-22
+Instances:    10329
+Attributes:   6
+              airline=AirAsia
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              days_left
+              price
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+SMOreg
+
+weights (not support vectors):
+ -       0.0618 * (normalized) airline=AirAsia
+ +       0.0422 * (normalized) airline=Vistara
+ +       0.0258 * (normalized) source_city=Kolkata
+ +       0.1266 * (normalized) stops
+ -       0.1675 * (normalized) days_left
+ +       0.1692
+
+
+
+Number of kernel evaluations: 803098918 (24.671% cached)
+
+Time taken to build model: 72.54 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.6687
+Mean absolute error                      0.0578
+Root mean squared error                  0.0875
+Relative absolute error                 70.8161 %
+Root relative squared error             76.3904 %
+Total Number of Instances             2066     
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L2-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C10-L2-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1,4-9,11-13,15-22
+Instances:    10329
+Attributes:   6
+              airline=AirAsia
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              days_left
+              price
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 1.26 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.7788
+Mean absolute error                      0.0468
+Root mean squared error                  0.0699
+Relative absolute error                 57.4337 %
+Root relative squared error             62.768  %
+Total Number of Instances            10329     
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     Clean_Dataset-weka.filters.unsupervised.instance.Resample-S1-Z5.0-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.unsupervised.attribute.SwapValues-C5-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C5-F2-S3-weka.filters.unsupervised.attribute.SwapValues-C3-F1-S6-weka.filters.unsupervised.attribute.SwapValues-C3-F5-S6-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C7-L2-weka.filters.unsupervised.attribute.Remove-R7-weka.filters.unsupervised.attribute.InterquartileRange-Rfirst-last-O3.0-E6.0-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C10-L2-weka.filters.unsupervised.attribute.Remove-R10-11-weka.filters.unsupervised.attribute.NominalToBinary-R1,2,6-weka.filters.unsupervised.attribute.OrdinalToNumeric-R13-15-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-unset-class-temporarily-weka.filters.unsupervised.attribute.Remove-R1,4-9,11-13,15-22
+Instances:    10329
+Attributes:   6
+              airline=AirAsia
+              airline=Vistara
+              source_city=Kolkata
+              stops
+              days_left
+              price
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 1.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.13 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.7588
+Mean absolute error                      0.0471
+Root mean squared error                  0.0747
+Relative absolute error                 57.67   %
+Root relative squared error             65.1856 %
+Total Number of Instances             2066     
+
